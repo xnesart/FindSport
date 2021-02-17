@@ -14,9 +14,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #333;
-  background: #ffffff;
-}
-.header {
+  background: #f6f7fc;
 }
 .header-background {
   margin: 0 auto;
@@ -105,8 +103,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.advantages-thumb {
-}
 .advantages-desc {
   text-align: center;
   font-size: 18px;
@@ -177,8 +173,6 @@ body {
   margin-top: 120px;
   margin-bottom: 120px;
 }
-.work-text {
-}
 .work-title {
   font-family: inherit;
   font-size: 40px;
@@ -196,14 +190,10 @@ body {
 .work-more {
   margin-top: 40px;
 }
-.button-about {
-}
 .work-video {
   margin-left: 80px;
 }
 /* PAYMENT */
-.payment {
-}
 .payment-title {
   font-family: inherit;
   font-size: 40px;
@@ -215,8 +205,6 @@ body {
 .payment-list {
   display: flex;
   justify-content: space-between;
-}
-.payment-item {
 }
 .payment-item-title {
   display: block;
@@ -247,16 +235,7 @@ body {
   margin-top: 120px;
   position: relative;
 }
-.managment:after {
-  content: "";
-  position: absolute;
-  right: -15%;
-  top: 600px;
-  background-repeat: no-repeat;
-  width: 459px;
-  height: 694px;
-  background-image: url('../img/managment-control-bg.jpg');
-}
+
 .managment-title {
   font-family: inherit;
   font-size: 40px;
@@ -279,7 +258,7 @@ body {
 .managment-add-workspace {
   display: flex;
   flex-direction: column;
-  background-image: url('../img/managment-bg.jpg');
+  background-image: url("../img/managment-bg.jpg");
   width: 1200px;
   height: 275px;
 }
@@ -289,7 +268,7 @@ body {
   font-size: 24px;
   line-height: 150%;
   padding-top: 56px;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 600px;
 }
 .managment-add-workspace_button {
@@ -301,7 +280,7 @@ body {
   line-height: 125%;
   max-width: 306px;
   border-radius: 51px;
-  background-color: #F85C78;
+  background-color: #f85c78;
   padding-left: 40px;
   padding-right: 74px;
   padding-top: 14px;
@@ -317,14 +296,31 @@ body {
   width: 24px;
   height: 24px;
 }
+.managment-control-bg {
+  position: relative;
+  background-color: #fff;
+  padding-bottom: 140px;
+}
+.managment-control-bg:after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: 130px;
+  background-repeat: no-repeat;
+  width: 459px;
+  height: 694px;
+  background-image: url("../img/managment-control-bg2.jpg");
+}
 .managment-control {
+  margin: 0 auto;
+  width: 1200px;
 }
 .managment-control-title {
   font-family: "Ubuntu", sans-serif;
   font-size: 40px;
   line-height: 46px;
-  color: #0B163D;
-  margin-top: 120px;
+  color: #0b163d;
+  padding-top: 120px;
   margin-bottom: 64px;
 }
 .managment-control-list {
@@ -355,32 +351,35 @@ body {
   font-family: inherit;
   font-size: 40px;
   line-height: 47px;
-  color: #0B163D;
+  color: #0b163d;
   margin-bottom: 58px;
 }
-.feedback-slider {
-
+.owl-carousel .slide,
+.owl-item {
+  position: relative;
 }
-.owl-carousel {
-}
-.owl-theme {
+.slide {
+  width: 360px;
+  height: 454px;
 }
 .first-slide {
   position: relative;
 }
-.slide-thumb {
-}
 .slide-title {
   position: absolute;
-  /* top: 140px; */
-  bottom: 40%;
+  bottom: 53%;
+  left: 10%;
   font-family: inherit;
   font-size: 20px;
   line-height: 143%;
   color: #fff;
 }
 .slide-text {
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 10px;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
 }
 .slide-text-desc {
   font-family: inherit;
@@ -395,14 +394,14 @@ body {
   font-family: inherit;
   font-weight: 500;
   line-height: 155%;
-  color: #1E337D;
+  color: #1e337d;
   padding-left: 40px;
   padding-bottom: 40px;
 }
 .slide-text-avatar:before {
   position: absolute;
   content: "";
-  background-image: url('../img/slider/avatar.jpg');
+  background-image: url("../img/slider/avatar.svg");
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -428,4 +427,121 @@ body {
   position: absolute;
   right: 10px;
   background: transparent;
+}
+/* ABOUT  */
+.about {
+  position: relative;
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
+.about-title {
+  text-align: center;
+  font-family: inherit;
+  font-size: 40px;
+  color: #0b163d;
+  margin-bottom: 60px;
+}
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/about-header-bg.svg");
+  width: 1200px;
+  border-radius: 8px 8px 0 0;
+}
+.about-header_title {
+  font-family: inherit;
+  font-size: 28px;
+  color: #fff;
+  max-width: 503px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.about-header_desc {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f6f7fc;
+  max-width: 680px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.about-questions-wrapper {
+  padding-left: 40px;
+}
+.about-questions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  list-style: none;
+  background-color: #fff;
+  padding-top: 40px;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid rgba(11, 22, 61, 0.2);
+}
+
+.about-quiestions_item {
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+.about-quiestions_title {
+  font-family: "Ubuntu", "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0b163d;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+.about-questions_text {
+  font-family: "Ubuntu", "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  color: #687089;
+  max-width: 500px;
+}
+.about-questions_spoiler {
+  position: absolute;
+  left: 48%;
+  bottom: 7%;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 18px;
+  color: #0b163d;
+}
+.about-questions_spoiler-list {
+  list-style: none;
+  display: none;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* FOOTER  */
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contacts-copyright {
+  font-family: "Ubuntu", "PT Sans", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #464646;
+}
+.contacts-analythics {
+  margin-left: 150px;
+}
+.contacts-data {
+  display: flex;
+}
+.contacts-tel {
+  font-family: "Ubuntu", "PT Sans", sans-serif;
+  font-size: 14px;
+  color: #464646;
+}
+.contacts-mail {
+  margin-left: 40px;
+  font-family: "Ubuntu", "PT Sans", sans-serif;
+  font-size: 14px;
+  color: #464646;
 }
